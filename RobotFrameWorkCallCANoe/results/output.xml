@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1 (Python 3.9.6 on win32)" generated="20211004 11:13:23.603" rpa="false" schemaversion="2">
+<suite id="s1" name="RobotFrameWorkCallCANoe" source="D:\ZPythonCode\RobotFrameWorkCallCANoe">
+<suite id="s1-s1" name="SimpeIntroduction" source="D:\ZPythonCode\RobotFrameWorkCallCANoe\SimpeIntroduction.robot">
+<test id="s1-s1-t1" name="test01">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://login.taobao.com/member/login.jhtml</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20211004 11:13:23.858" level="INFO">Opening browser 'chrome' to base url 'https://login.taobao.com/member/login.jhtml'.</msg>
+<status status="PASS" starttime="20211004 11:13:23.858" endtime="20211004 11:13:28.642"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="J_Quick2Static"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20211004 11:13:28.642" level="INFO">Clicking element 'xpath=//*[@id="J_Quick2Static"]'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20211004 11:13:28.872" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211004 11:13:28.651" endtime="20211004 11:13:28.872"/>
+</kw>
+<msg timestamp="20211004 11:13:28.917" level="FAIL">Element with locator 'xpath=//*[@id="J_Quick2Static"]' not found.</msg>
+<status status="FAIL" starttime="20211004 11:13:28.642" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="TPL_username_1"]</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="TPL_password_1"]</arg>
+<arg>123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title_1}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//*[@id="J_SubmitStatic"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Get Title" library="SeleniumLibrary">
+<var>${title_2}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Should Not Contain" library="BuiltIn">
+<arg>${title_2}</arg>
+<arg>${title_1}</arg>
+<doc>Fails if ``container`` contains ``item`` one or more times.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20211004 11:13:28.917" endtime="20211004 11:13:28.917"/>
+</kw>
+<doc>测试淘宝</doc>
+<status status="FAIL" starttime="20211004 11:13:23.858" endtime="20211004 11:13:28.917">Element with locator 'xpath=//*[@id="J_Quick2Static"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20211004 11:13:23.619" endtime="20211004 11:13:28.925"/>
+</suite>
+<status status="FAIL" starttime="20211004 11:13:23.603" endtime="20211004 11:13:28.925"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFrameWorkCallCANoe">RobotFrameWorkCallCANoe</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="SimpeIntroduction">RobotFrameWorkCallCANoe.SimpeIntroduction</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
